@@ -1,0 +1,12 @@
+<div class="app-chat-input__wrapper">
+  <input
+    type="text"
+    pInputText
+    [ngModel]="textValue"
+    (ngModelChange)="onTextChange($event)"
+    placeholder="Start typing here..."
+  />
+  <p-button (click)="onClick()" class="app-chat-input__button"
+    >Display message</p-button
+  >
+</div>
